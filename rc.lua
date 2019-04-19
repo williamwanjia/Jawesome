@@ -6,13 +6,12 @@ require("awful.autofocus")
 local wibox = require("wibox")
 
 -- Jia: 20190125
-local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
 local cpu_widget = require("awesome-wm-widgets.cpu-widget.cpu-widget")
 local batteryarc_widget = require("awesome-wm-widgets.batteryarc-widget.batteryarc")
-local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
+-- local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
 local volumearc_widget = require("awesome-wm-widgets.volumearc-widget.volumearc")
 local ramgraph_widget = require("awesome-wm-widgets.ram-widget.ram-widget")
-local tcputarc_widget = require("awesome-wm-widgets.tcpuarc-widget.tcpuarc")
+-- local tcputarc_widget = require("awesome-wm-widgets.tcpuarc-widget.tcpuarc")
 local weather_widget = require("awesome-wm-widgets.weather-widget.weather")
 
 
@@ -320,7 +319,6 @@ awful.screen.connect_for_each_screen(function(s)
             weather_widget,
             ramgraph_widget, 
             cpu_widget,
-            tcputarc_widget,
             batteryarc_widget,
             volumearc_widget,
             mytextclock,
